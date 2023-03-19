@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   text-decoration: none;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+
+
 }
 
 
@@ -16,8 +25,11 @@ body{
 
 .back{
   display: flex;
-  width: 1920px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(images/stronger-young-muscular-caucasian-athlete-practicing-lunges-in-gym-with-barbell-male-model-doing-strength-exercises-training-his-lower-body-wellness-healthy-lifestyle-bodybuilding-concept\ 1.png);
+  background-size: cover;
 }
 
 
@@ -36,24 +48,25 @@ body{
   color: white;
 }
 
+.text{
+  font-family: 'Antonio', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  color: white;
+  background-color: #09A2F9;
 
-
-
-
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .header{
-  /* outline: 3px solid black; */
     background-color: #09A2F9;
     width: 100%;
     height: 100px;
     color: white;
+    
 
-    padding: 0%;
-    margin-top: -0.4%;
-    margin-left: -0.4%;
-    margin-right: -0.5%;
 
     display: flex;
     justify-content: space-around;
@@ -65,35 +78,59 @@ body{
     color: white;
 }
 
+.one_time{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/Group\ 7.png);  background-size: cover;;
+  font-family: 'Antonio', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+.one-time{
+  position: absolute;
+  left: 10%;
+  top: 145%;
+  
+}
+.one__time{
+  font-family: 'Antonio', sans-serif;
+  color: #09A2F9;
+  font-size: 40px;
+
+  position: absolute;
+  left: 20%;
+  top: 155%;
+}
+.learn_more{
+  background-color: #FFE400;
+  font-family: 'Antonio', sans-serif;
+  color: #09A2F9;
+  font-size: 26px;
+  position: absolute;
+  left: 30%;
+  top: 195%;
+  width: 15%;
+  height: 6%;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+
 .containter{
     position: absolute;
-    width: 250px;
-    height: 300px;
-    background-color: #279cd1;
+    width: 14%;
+    height: 25%;
+    background-color: #19aef3;
     transform: translateX(-450px);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
     align-items:center;
 
     border-radius: 10%;
-}
-
-
-.containter2{
-  position: absolute;
-  width: 250px;
-  height: 300px;
-  background-color: #279cd1;
-  transform: translateX(450px);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;;
-  align-items:center;
-
-  border-radius: 10%;
+    border: 2px solid black;
 }
 
 .btn {
@@ -124,9 +161,123 @@ body{
   transform: translate(2px, 2px);
 }
 
+
+.prices{
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  border-bottom: 15px solid black;
+}
+
+
+.subs{
+  color: white;
+  background-color: black;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 60vh;
+  width: 100vw;
+
+  margin: 0%;
+  padding: 0%;
+}
+.base{
+  background-image: url(images/Rectangle\ 14.png);
+  height: 40vh;
+  width: 20vw;
+
+  display: flex;
+  text-align: center;
+
+
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bodybuilders{
+  object-fit: contain;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.BUY{
+  background-color: #09A2F9;
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 23px;
+
+  width: 30%;
+  border: 0;
+  border-radius: 2%;
+  position: relative;
+  left: 135px;
+}
+
+.protrainer{
+  text-align: center;
+  font-family: 'Antonio', sans-serif;
+  font-size: 48px;
+  color: white;
+}
+.profis {
+  background-color: black;
+  margin: 0;
+  padding: 0
+}
+.bx-wrapper{
+  margin: 0;
+  border: 0;
+}
+
+
+.number{
+  color: #09A2F9;
+  font-family: 'Antonio', sans-serif;
+  font-size: 69px;
+}
+.textile{
+  font-family: 'Antonio', sans-serif;
+  font-size: 31px;
+  color: #FAFAFA;
+}
+.sets{
+  font-family: 'Antonio', sans-serif;
+  color: #FAFAFA;
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .btn {
     min-width: 120px;
     padding: 0 25px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+  width: device-width;
+  }
+  img{
+    max-width: 100%;
+  }
+  html {
+    font-size: 100%;
+  };
+}
+
+@media only screen and (min-width: 600px) {
+
 }
